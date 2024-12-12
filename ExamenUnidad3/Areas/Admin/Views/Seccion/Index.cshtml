@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_LayoutAdmin";
+}
+@model IEnumerable<ExamenUnidad3.Areas.Admin.Models.AgregarVewModel>
+
+<h3 class="titulo">Secciones</h3>
+
+<a href="~/Admin/Seccion/Agregar" class="btn">Agregar Sección</a>
+
+<table class="tablaNoticias">
+    <colgroup>
+        <col style="width: 70%" />
+        <col style="width: 20%" />
+        <col style="width: 10%" />
+    </colgroup>
+    <tr>
+        <th>Nombre</th>
+        <th>Num. Noticias</th>
+        <th>Acción</th>
+    </tr>
+    <tbody>
+        
+
+        @foreach(var noticas in Model)
+        {
+        <tr>
+            <td>@noticas.Nombre</td>
+            <td>
+                @noticas.Noticias.Count()
+            </td>
+            <td>
+                <a id="lnkEdit" class="edit" href="~/Seccion/Editar"></a>
+                <a id="lnkDelete" class="delete" href="~/Seccion/Eliminar"></a>
+            </td>
+        </tr>
+        }        
+
+    </tbody>
+</table>
+

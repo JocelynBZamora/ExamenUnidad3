@@ -1,0 +1,20 @@
+﻿@{
+	Layout = "_LayoutAdmin";
+}
+@model ExamenUnidad3.Areas.Admin.Models.AgregarVewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<form method="post" action="~/Admin/Seccion/Agregar">
+	<h3>Agregar una sección</h3>
+
+	<label>Nombre de la sección:</label>
+	<input type="text" required="required" asp-for="Nombre" />
+
+	<div id="error" class="error">
+		@Html.ValidationSummary(true)
+	</div>
+
+	<div class="botones">
+		<input type="submit" value="Agregar sección" />
+		<a class="btn" href="~/Seccion">Cancelar</a>
+	</div>
+</form>

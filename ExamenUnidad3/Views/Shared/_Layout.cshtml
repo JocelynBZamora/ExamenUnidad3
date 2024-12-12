@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sitio Web de Noticias</title>
+    <link href="~/estilos.css" rel="stylesheet" />
+    <link rel="icon" href="~/images/news.png" />
+</head>
+<body>
+
+    <header>
+        <h1><a href="~/Home/Index">WEB DE NOTICIAS</a></h1>
+    </header>
+    <nav>
+        <form method="get" action="~/Home/Buscar">
+            <a href="~/Home/Index">Todas</a>
+            <a href="~/Home/Seccion">Sección 1</a>
+            <a href="~/Home/Seccion">Sección 2</a>
+            <a href="~/Home/Seccion">Sección 3</a>
+            <a href="~/Home/Seccion">Sección 4</a>
+            <a href="~/Home/Seccion">Sección 5</a>
+            <a href="~/Home/Seccion">Sección 6</a>
+            <input name="query" type="search" placeholder="Buscar noticias" onkeydown="if (event.keyCode == 13) submit();" />
+        </form>
+    </nav>
+
+    <aside>
+
+
+
+        <h1>Más Leidas</h1>
+
+        <section class="newsList">
+
+            <div class="news">
+                <a href="~/Home/VerNoticia">
+                    <img src="~/uploads/101.png" />
+                    <h2>Dropbox sigue los pasos de Drive y mejora sus opciones para trabajar en equipo</h2>
+                </a>
+            </div>
+
+            <div class="news">
+                <a href="~/Home/VerNoticia">
+                    <img src="~/uploads/101.png" />
+                    <h2>Dropbox sigue los pasos de Drive y mejora sus opciones para trabajar en equipo</h2>
+                </a>
+            </div>
+
+
+            <div class="news">
+                <a href="~/Home/VerNoticia">
+                    <img src="~/uploads/101.png" />
+                    <h2>Dropbox sigue los pasos de Drive y mejora sus opciones para trabajar en equipo</h2>
+                </a>
+            </div>
+
+
+            <div class="news">
+                <a href="~/Home/VerNoticia">
+                    <img src="~/uploads/101.png" />
+                    <h2>Dropbox sigue los pasos de Drive y mejora sus opciones para trabajar en equipo</h2>
+                </a>
+            </div>
+
+
+            <div class="news">
+                <a href="~/Home/VerNoticia">
+                    <img src="~/uploads/101.png" />
+                    <h2>Dropbox sigue los pasos de Drive y mejora sus opciones para trabajar en equipo</h2>
+                </a>
+            </div>
+
+        </section>
+    </aside>
+
+
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <h5>PROGRAMACIÓN WEB</h5>
+        <h5>EXAMEN</h5>
+    </footer>
+
+</body>
+</html>
+

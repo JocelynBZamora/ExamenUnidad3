@@ -1,0 +1,466 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: Tahoma;
+}
+
+
+header {
+    background-color: #632480;
+    height: 100px;
+}
+
+    header a {
+        text-decoration:none;
+        color:white;
+    }
+
+    header h1 {
+        color: white;
+        margin: 0 auto;
+        padding: 0;
+        width: 220px;
+        padding-left: 100px;
+        font: 2.6em Arial;
+        text-align: center;
+        letter-spacing: 2px;
+        background: url(images/news.png) no-repeat;
+        background-position: 15px;
+        background-size: 70px;
+    }
+
+nav {
+    width: 100%;
+    min-height: 45px;
+    background-color: #9030ba;
+}
+
+    nav a {
+        color: white;
+        display: inline-block;
+        font: 1.2em Tahoma;
+        padding: 0 10px;
+        line-height: 45px;
+        text-decoration: none;
+        height: 45px;
+    }
+
+        nav a:hover {
+            background-color: #632480;
+        }
+
+    nav input {
+        display: inline-block;
+        float: right;
+        margin: 5px;
+        height: 35px;
+        width: 250px;
+        font-size: 12pt;
+        background:white url(images/search.png) no-repeat;
+        background-size:contain;
+        padding-left:33px;
+    }
+
+
+main {
+    display: block;
+    min-height: 450px;
+    margin: 10px 250px 60px 10px;
+}
+
+footer {
+    clear: both;
+    padding: 10px 0;
+    height: 30px;
+    background-color: #71ae1e;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+    footer h5 {
+        color: white;
+        font: normal Arial;
+        margin: 2px;
+        text-align: center;
+    }
+
+aside h1, main h1 {
+    margin: 0 0 20px 0;
+    padding: 10px;
+    background-color: #87ce27;
+    color: #ffffff;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.newsBoard {
+    margin: auto;
+    overflow:hidden;
+}
+
+.news {
+    width: calc(25% - 20px);
+    background-color: white;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .news a {
+        display: block;
+        height: 272px;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+    .news img {
+        height: 272px;
+        margin: 0 -100%;
+        vertical-align: middle;
+    }
+
+    .news h2 {
+        background-color: rgba(0, 0, 0, 0.70);
+        color: white;
+        font-weight: normal;
+        font-size: small;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        padding: 5px;
+    }
+
+
+.newsBoard .news:nth-child(4n) {
+    margin-right: 0;
+    width: calc(25% - 10px);
+}
+
+aside {
+    width: 230px;
+    float: right;
+    margin: 10px;
+}
+
+.newsList.search .news {
+    width: auto;
+}
+
+.newsList .news {
+    overflow: hidden;
+    float: none;
+    background: none;
+    width: 230px;
+    border-bottom: 1px dotted gray;
+    padding-bottom: 10px;
+}
+
+
+    .newsList .news a {
+        height: auto;
+        text-decoration: none;
+    }
+
+    .newsList .news img {
+        max-width: 90px;
+        max-height: 90px;
+        width: auto;
+        height: auto;
+        float: left;
+        margin: 0;
+    }
+
+
+    .newsList .news h2 {
+        background-color: transparent;
+        font-weight: normal;
+        font-size: 9pt;
+        margin: 0;
+        float: right;
+        width: 130px;
+        position: static;
+        text-transform: none;
+        text-align: left;
+        color: #1d1d1d;
+    }
+
+.newsList.search .news img {
+    max-height: 40px;
+    margin-right: 15px;
+}
+
+.newsList.search .news h2 {
+    float: none;
+    width: unset;
+    margin: 0 5px;
+    font-size: large;
+}
+
+#Noticia {
+    background: white;
+    border: 1px solid lightgray;
+    padding: 0 10px;
+}
+
+    .MainAdmin h3, #Noticia h3 {
+        margin-bottom: 5px;
+        font-size: 1.5em;
+        line-height: 1.1em;
+        font-weight: bold;
+        color: #353535;
+        text-decoration: none;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d0d0d0;
+        text-transform: uppercase;
+    }
+
+    #Noticia img {
+        max-width: 100%;
+        max-height: 400px;
+        height: 400px;
+        margin: auto;
+        display: block;
+    }
+
+    #Noticia .contenido {
+        margin: 10px 0;
+        color: #696868;
+        font-size: 1em;
+        margin-top: 15px;
+        text-align: justify;
+    }
+
+
+    #Noticia div.datos {
+        height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .datos a{
+        float:right;
+    }
+
+
+    #Noticia span {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: smaller;
+        line-height: 20px;
+    }
+
+    #Noticia .vistos {
+        background-image: url('images/eye.png');
+        background-repeat: no-repeat;
+        padding-left: 25px;
+    }
+
+
+
+.MainAdmin {
+    background: white;
+    border: 1px solid lightgray;
+    padding: 0 10px;
+    width: calc(100% - 40px);
+    margin: 10px 250px 60px 10px;
+    text-align: center;
+}
+
+
+.delete, .edit {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.edit {
+    background-image: url(images/eye.png);
+}
+
+.delete {
+    background-image: url(images/delete.png);
+}
+
+
+.tablaNoticias {
+    border-collapse: collapse;
+    border: 1px solid gainsboro;
+    width: 80%;
+    margin: 15px auto;
+    font-size: 11pt;
+}
+
+    .tablaNoticias td {
+        border: 1px solid gainsboro;
+    }
+
+        .tablaNoticias td:last-child {
+            text-align: center;
+        }
+
+    .tablaNoticias th {
+        background-color: #71ae1e;
+        color: white;
+        padding: 5px;
+        text-transform: uppercase;
+    }
+
+
+    .tablaNoticias tbody tr:nth-child(odd) {
+        background-color: #def3c2;
+    }
+
+tfoot td {
+    padding: 10px;
+}
+
+tfoot a {
+    color: #71ae1e;
+    font-size: 12pt;
+}
+
+.controles {
+    width: 80%;
+    margin: 15px auto 10px auto;
+    overflow: hidden;
+}
+
+
+    .controles .der {
+        float: right;
+    }
+
+
+.MainAdmin input[type=submit], .btn, input[type=button] {
+	background-color: #71ae1e;
+	color: white;
+	padding: 5px 10px;
+	display: inline-block;
+	margin: 10px auto;
+	text-decoration: none;
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: outset;
+	font-size:small;
+	height:30px;
+	line-height:20px;
+}
+
+.botones {
+    text-align: center;
+    clear: both;
+}
+
+
+.formCaptura {
+    width: 80%;
+    margin: 10px auto;
+}
+
+    .formCaptura label {
+        float: left;
+        width: 10%;
+        height: 25px;
+        line-height: 25px;
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+        overflow: hidden;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+
+
+    .formCaptura .q {
+        width: 15%;
+    }
+
+    .formCaptura input, .formCaptura select {
+        display: block;
+        height: 25px;
+        line-height: 25px;
+        float: left;
+        width: 90%;
+        margin-bottom: 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .formCaptura textarea {
+        resize: none;
+        width: 70%;
+        float: left;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+    .formCaptura .imagen {
+        width: 29%;
+        float: right;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+        .formCaptura .imagen input {
+            display: inline;
+            float: none;
+            width: auto;
+        }
+
+    .formCaptura img {
+        max-width: 99%;
+        min-width: 50%;
+        min-height: 150px;
+        max-height: 300px;
+        display: block;
+        margin: auto;
+        border: 1px solid gainsboro;
+    }
+
+
+
+.popUp {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.64);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+    .popUp > div {
+        padding: 10px;
+        background: white;
+        width: 500px;
+        margin: 20px auto;
+    }
+
+    .popUp div h3 {
+        margin: 0 0 10px 0;
+    }
+
+
+
+.error {
+    margin: 5px;
+    color: red;
+    font-size: x-small;
+    padding: 0;
+}

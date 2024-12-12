@@ -1,0 +1,27 @@
+﻿@{
+	Layout = "_LayoutAdmin";
+}
+
+<form>
+	<h3>Eliminar sección</h3>
+
+	<label>Por favor confirme la eliminación de la sección llamada <span id="nomCategoria">Sección</span></label>
+
+	<p id="moverNoticias">
+		La sección a eliminar tiene noticias asignadas. Seleccione la sección a la cual mover las noticias asociadas.<br />
+
+		<select id="cmbCategoriaMover">
+			<option value="0">Sección</option>
+			<option value="0">Sección</option>
+			<option value="0">Sección</option>
+			<option value="0">Sección</option>
+		</select>
+	</p>
+
+	<div id="error" class="error"></div>
+
+	<div class="botones">
+		<input type="submit" value="Eliminar" id="btnEliminar" />
+		<a class="btn" href="~/Seccion">Cancelar</a>
+	</div>
+</form>
